@@ -8,12 +8,12 @@ services:
     restart: always
     network_mode: bridge
     environment:
-      - PROVIDER=world
+      - PROVIDER=ottonova
     links:
       - database
     depends_on:
       - database
-    command: /bin/bash -c "python tests.py && python app.py"
+    command: /bin/bash -c 'echo "Replacing unittest $$PROVIDER" && sed -i.backup "s/world/$$PROVIDER/g" tests.py && python tests.py && python app.py'
     volumes:
       - data:/data/webapp:rw
   database:

@@ -13,5 +13,7 @@ A qick Docker Training
 
 4.) Add unittest startup <commit>
 
+5.) Return message from env variable. Adjust unittest. <commit>
+
 
 
