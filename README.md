@@ -3,21 +3,24 @@ A quick Docker Training
 
 Thest the image with:
 ```docker-compose up -d && docker-compose logs -f otto_exercise```
-> otto_exercise_1  | Replacing unittest ottonova
-> otto_exercise_1  | .
-> otto_exercise_1  | ----------------------------------------------------------------------
-> otto_exercise_1  | Ran 1 test in 0.026s
-> otto_exercise_1  |
-> otto_exercise_1  | OK
-> otto_exercise_1  |  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
-> otto_exercise_1  | 24.134.21.245 - - [18/May/2017 19:27:25] "GET / HTTP/1.1" 200 -
-> otto_exercise_1  | Replacing unittest ottonova
-> otto_exercise_1  | .
-> otto_exercise_1  | ----------------------------------------------------------------------
-> otto_exercise_1  | Ran 1 test in 0.019s
-> otto_exercise_1  |
-> otto_exercise_1  | OK
-> otto_exercise_1  |  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+
+```
+otto_exercise_1  | Replacing unittest ottonova
+otto_exercise_1  | .
+otto_exercise_1  | ----------------------------------------------------------------------
+otto_exercise_1  | Ran 1 test in 0.026s
+otto_exercise_1  |
+otto_exercise_1  | OK
+otto_exercise_1  |  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+otto_exercise_1  | 24.134.21.245 - - [18/May/2017 19:27:25] "GET / HTTP/1.1" 200 -
+otto_exercise_1  | Replacing unittest ottonova
+otto_exercise_1  | .
+otto_exercise_1  | ----------------------------------------------------------------------
+otto_exercise_1  | Ran 1 test in 0.019s
+otto_exercise_1  |
+otto_exercise_1  | OK
+otto_exercise_1  |  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+```
 
 1.) Found the Docker training webapp in Docker Hub. (https://hub.docker.com/r/training/webapp/)
 
@@ -61,6 +64,7 @@ Service: Deploy a fixed and tested version of the application. Create a python v
          via Deployment tooling
 Ops: Create startup systemd unit for startup behaviour and log management
 
+-----
 
 This docker image is a good example that you should split configuration and code:
 * Unittest should be executed during Image build and not during startup.
