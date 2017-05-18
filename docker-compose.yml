@@ -7,10 +7,13 @@ services:
       - 8090:5000
     restart: always
     network_mode: bridge
+    environment:
+      - PROVIDER=world
     links:
       - database
     depends_on:
       - database
+    command: /bin/bash -c "python tests.py && python app.py"
     volumes:
       - data:/data/webapp:rw
   database:

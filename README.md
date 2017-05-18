@@ -11,5 +11,7 @@ A qick Docker Training
 3.) Added mongo databse to the app service <commit>
 
 
+4.) Add unittest startup <commit>
+
 
 
