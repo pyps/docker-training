@@ -1,0 +1,14 @@
+version: '2.0'
+networks: {}
+services:
+  otto_exercise:
+    image: training/webapp:latest
+    ports:
+      - 8090:5000
+    restart: always
+    network_mode: bridge
+    volumes:
+      - data:/data/webapp:rw
+volumes:
+  data:
+    driver: local

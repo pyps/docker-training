@@ -6,6 +6,7 @@ A qick Docker Training
 
     docker pull training/webapp:latest
 
+2.) Basic docker-compose is at commit:
 
 
 
