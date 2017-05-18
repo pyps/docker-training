@@ -64,4 +64,6 @@ Ops: Create startup systemd unit for startup behaviour and log management
 
 This docker image is a good example that you should split configuration and code:
 * Unittest should be executed during Image build and not during startup.
- Configuration Input should not be executed directly.
+* Configuration Input should not be executed directly.
+
+Tested with docker-compose binary version 1.13.0/1.8.0 and docker-compose file version 2.0/3
