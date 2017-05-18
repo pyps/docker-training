@@ -7,8 +7,18 @@ services:
       - 8090:5000
     restart: always
     network_mode: bridge
+    links:
+      - database
+    depends_on:
+      - database
     volumes:
       - data:/data/webapp:rw
+  database:
+    image: mongo:3.4.4
+    restart: always
+    network_mode: bridge
+    volumes:
+      - data:/data/db:rw
 volumes:
   data:
     driver: local

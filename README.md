@@ -6,7 +6,9 @@ A qick Docker Training
 
     docker pull training/webapp:latest
 
-2.) Basic docker-compose is at commit:
+2.) Basic docker-compose is at <commit>
+
+3.) Added mongo databse to the app service <commit>
 
 
 
