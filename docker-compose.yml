@@ -4,7 +4,7 @@ services:
   otto_exercise:
     image: training/webapp:latest
     ports:
-      - 8090:5000
+      - 9080:5000
     restart: always
     network_mode: bridge
     environment:
